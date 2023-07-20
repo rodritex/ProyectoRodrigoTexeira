@@ -1,0 +1,55 @@
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 5px 0px;
+    }
+    .tendencia-galery1{
+        grid-template-columns: 100%;
+        min-width: none;
+        .foto-grande-tendencia1{
+            display: flex;
+            object-position: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .tendencia-galery2{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .wrapper{
+        grid-template-columns: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    #informacion{
+        grid-template-columns: 100%;
+        .about-us-img1{
+            visibility: hidden;
+        }
+        .about-us-img2{
+            visibility: hidden;
+        }
+        p{
+            margin-top: 30px;
+        }
+    }
+
+    .container-contact{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+            .imagen-contacto{
+                visibility: hidden;
+            }
+            .texto-contacto{
+                margin-top: -100px;
+            }
+    }
+}

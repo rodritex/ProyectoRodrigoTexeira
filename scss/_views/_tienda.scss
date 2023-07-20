@@ -1,0 +1,94 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #d1d5d886;
+    .producto{
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding-top: 20px;
+        text-align: center;
+            &:hover{
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                transform: scale(1.05);
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                width: 250px;
+                height: 350px;
+            }
+            .producto-info{
+                padding: 20px 30px;
+                padding-bottom: 20px;
+                    button{
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        font-size: medium;
+                    }
+                    .producto-precio{
+                        position: relative;
+                        top: -5px;
+                    }
+                    
+                    .producto-nombre{
+                        position: relative;
+                        top: -10px;
+                        font-weight: bold;
+                    }
+            }
+    }
+}
+
+#bannertienda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        color: white;
+        height: 30vh; 
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/Bannertienda.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        filter: grayscale(100%);
+    }
+
+
+.topnav {
+    background-color: saddlebrown;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+        a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+                &:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+                &:active {
+                    background-color: $primary-color;
+                    color: white;
+                }
+        }
+        .icon {
+            display: none;
+        }
+}
