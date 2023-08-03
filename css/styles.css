@@ -318,7 +318,6 @@ textarea {
   display: grid;
   justify-content: center;
   text-align: center;
-  padding-top: 130px;
   font-weight: bold;
 }
 #informacion .texto-info h2 {
@@ -397,30 +396,40 @@ textarea {
   filter: grayscale(100%);
 }
 
-.topnav {
-  background-color: saddlebrown;
-  overflow: hidden;
+.menu-tienda {
+  background-color: rgb(181, 211, 130);
+  padding: 0.5rem 2rem;
+}
+.menu-tienda .nav-menu ul {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.menu-tienda .nav-menu ul li {
+  margin-right: 3rem;
 }
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.menu-tienda .nav-menu ul li a {
+  color: #000000;
+  font-weight: bold;
 }
-.topnav a:active {
-  background-color: rgba(155, 194, 78, 0.308);
-  color: white;
+.menu-tienda .nav-menu ul li a:hover {
+  color: saddlebrown;
 }
-.topnav .icon {
+.menu-tienda .nav-menu ul li a:active {
+  color: rgb(102, 51, 14);
+}
+.menu-tienda .nav-menu ul li:first-child {
+  background: rgba(88, 109, 45, 0.719);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+}
+.menu-tienda .nav-menu i img {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.menu-icon, #check {
   display: none;
 }
 
@@ -601,6 +610,7 @@ button:hover {
   }
   #informacion p {
     margin-top: 30px;
+    font-size: 1em;
   }
   .container-contact {
     display: grid;
@@ -613,6 +623,29 @@ button:hover {
   }
   .container-contact .texto-contacto {
     margin-top: -100px;
+  }
+  .menu-tienda .nav-menu .menu-icon {
+    display: block;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .menu-tienda .nav-menu ul {
+    display: block;
+    background: rgb(181, 211, 130);
+    width: 100%;
+  }
+  .menu-tienda .nav-menu ul li {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-tienda .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    transition: all 0.25s;
   }
 }
 

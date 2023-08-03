@@ -65,30 +65,43 @@
         filter: grayscale(100%);
     }
 
-
-.topnav {
-    background-color: saddlebrown;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-        a{
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-                &:hover {
-                    background-color: #ddd;
-                    color: black;
+.menu-tienda{
+        background-color: $strong-green;
+        padding: .5rem 2rem;
+            .nav-menu{ 
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                        li{
+                            margin-right: 3rem;
+                                a{
+                                    color: #000000;
+                                    font-weight: bold;
+                                    &:hover {
+                                        color: saddlebrown;
+                                    }
+                                    &:active {
+                                        color: rgb(102, 51, 14);
+                                    }
+                                }
+                                &:first-child{
+                                    background: rgba(88, 109, 45, 0.719) ;
+                                    padding: .25rem .75rem;
+                                    border-radius: 2rem;
+                                }
+                        }
                 }
-                &:active {
-                    background-color: $primary-color;
-                    color: white;
+                i{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 2px;
+                    }
                 }
-        }
-        .icon {
-            display: none;
-        }
+            }
 }
+
+    .menu-icon, #check{
+        display: none;
+    }
